@@ -1,0 +1,299 @@
+# ===========================================
+# lkphp框架项目 .gitignore
+# ===========================================
+
+# ===========================================
+# 依赖和包管理
+# ===========================================
+/vendor/
+composer.phar
+composer.lock
+
+# ===========================================
+# 环境配置文件
+# ===========================================
+.env
+.env.*
+!.env.example
+.env.local
+.env.development
+.env.testing
+.env.production
+.env.staging
+env
+
+# ===========================================
+# 缓存和临时文件
+# ===========================================
+/storage/cache/*
+/storage/logs/*
+/storage/sessions/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/temp/*
+/cache/*
+/tmp/*
+*.tmp
+*.temp
+
+# 保留storage目录结构
+!/storage/cache/.gitkeep
+!/storage/logs/.gitkeep
+!/storage/sessions/.gitkeep
+!/storage/framework/cache/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/views/.gitkeep
+
+# ===========================================
+# 日志文件
+# ===========================================
+*.log
+/logs/*
+!/logs/.gitkeep
+laravel.log
+lumen.log
+lkphp.log
+
+# ===========================================
+# 数据库文件
+# ===========================================
+*.sqlite
+*.sqlite3
+*.db
+
+# ===========================================
+# 开发和调试文件
+# ===========================================
+.phpunit.result.cache
+phpunit.xml
+!phpunit.xml.dist
+/coverage/*
+/build/*
+/.php-cs-fixer.cache
+.php_cs.cache
+.phpstan.cache
+/.phpunit.cache
+
+# ===========================================
+# IDE和编辑器配置
+# ===========================================
+
+# Cursor IDE
+/.cursor/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PhpStorm / IntelliJ IDEA
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Nano
+*.save
+
+# ===========================================
+# 操作系统文件
+# ===========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===========================================
+# 网络服务器配置
+# ===========================================
+.htaccess
+.htpasswd
+.apache-conf
+.nginx-conf
+
+# ===========================================
+# Node.js 相关 (前端资源构建)
+# ===========================================
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.yarn/
+/dist/
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# ===========================================
+# 前端构建工具
+# ===========================================
+/public/css/
+/public/js/
+/public/fonts/
+mix-manifest.json
+webpack-stats.json
+
+# ===========================================
+# 容器和部署相关
+# ===========================================
+docker-compose.override.yml
+.docker/
+Dockerfile.local
+.dockerignore.local
+
+# Kubernetes
+*.kubeconfig
+kustomization.yaml
+
+# ===========================================
+# 安全和敏感文件
+# ===========================================
+*.pem
+*.p12
+*.key
+*.crt
+*.csr
+*.cer
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+known_hosts
+authorized_keys
+
+# ===========================================
+# 备份文件
+# ===========================================
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.save
+*~
+
+# ===========================================
+# 压缩文件
+# ===========================================
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.rar
+*.7z
+
+# ===========================================
+# 项目特定文件
+# ===========================================
+
+# lkphp框架特定缓存
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
+
+# 编译后的模板
+/resources/views/compiled/*
+!/resources/views/compiled/.gitkeep
+
+# 上传文件
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# 性能测试结果
+/performance-reports/*
+!/performance-reports/.gitkeep
+
+# API文档生成
+/api-docs/*
+!/api-docs/.gitkeep
+
+# 静态分析报告
+/reports/*
+!/reports/.gitkeep
+
+# ===========================================
+# 开发工具和测试
+# ===========================================
+.php-version
+.tool-versions
+.vagrant/
+Vagrantfile.local
+.homestead
+
+# Codeception
+/tests/_output/*
+!/tests/_output/.gitkeep
+/tests/_support/_generated
+
+# Pest PHP
+.pest
+
+# ===========================================
+# 版本控制
+# ===========================================
+.git/
+.gitattributes.local
+.mailmap
+
+# ===========================================
+# 文档生成工具
+# ===========================================
+/docs/_build/
+/docs/.doctrees/
+
+# 注意: docs/ 目录本身不被忽略，因为包含重要的设计文档
